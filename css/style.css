@@ -10,8 +10,40 @@
     --clr-light-grey: hsl(0, 0%, 86%);
     --clr-smoke-grey: hsl(0, 1%, 44%);
     --clr-off-black: hsl(0, 0%, 8%);
-
-
     
 }
 
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--clr-light-grey);
+    display: flex;
+    
+}
+
+.container{
+    background: var(--clr-off-white);
+    width: 90%;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-top: 20rem;
+}
+
+.form{}
+
+.results{}
+
+.results-text{}
+
+.results-field{}
