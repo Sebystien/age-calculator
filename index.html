@@ -24,26 +24,29 @@
 
       <!--------------------------------->
       
-    <form class="form">
+    <form class="form" id="form-submit" method="#" autocomplete="off">
       <div class="input-boxes">
           <div>
-           <span>Day</span>
-            <input type="text" name="date" id="" data-v="">
+           <h3 class="day">Day</h3>
+            <input type="text" name="date" id="" data-v="" class="input-text input-day" placeholder="DD">
+            <span class="validation"> must be</span>
          </div>
          <div>
-           <span>Month</span>
-           <input type="text" name="date" id="" data-v="">
+           <h3 class="month">Month</h3>
+           <input type="text" name="date" id="" data-v="" class="input-text input-month" placeholder="MM">
+           <span class="validation">Must be</span>
          </div>
          <div>
-           <span>Year</span>
-           <input type="text" name="date" id="" data-v="">
+           <h3 class="year ">Year</h3>
+           <input type="text" name="date" id="" data-v="" class="input-text input-year" placeholder="YYYY">
+           <span class="validation">Must be</span>
          </div>
       </div>
 
       <!--------------------------------->
       
       <div class="btn-box">
-         <button type="submit">
+         <button type="submit" class="btn" id="sub">
            <img src="/assets/images/icon-arrow.svg" alt="Get your age">
          </button>
       </div>
@@ -54,12 +57,12 @@
 
       <div class="results">
         <h2 class="results-text">
-          <span class="results-field">--</span> years
+          <span class="results-field result-year">38</span> years
         </h2>
         <h2 class="results-text">
-           <span class="results-field">--</span> months</h2>
+           <span class="results-field result-month">12</span> months</h2>
         <h2 class="results-text">
-          <span class="results-field">--</span> days
+          <span class="results-field result-days">02</span> days
         </h2>
 
       </div>
@@ -74,5 +77,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="asebastien.com" target="_blank">Seby</a>.-->
   </div>
+
+
+  <script src="app.js"></script>
 </body>
 </html>
